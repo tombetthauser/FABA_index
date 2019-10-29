@@ -1,11 +1,17 @@
 require_relative "faba_model.rb"
 
-print "\nPlease enter Artist Contributers: "
-a_con = gets.chomp.to_i
-print "\nPlease enter Artists Benefitted: "
-a_ben = gets.chomp.to_i
-print "\nPlease enter exponent: "
-exp = gets.chomp.to_i
+system "clear"
 
-faba = Faba.new(a_con, a_ben, exp)
+while true
+  print "Please enter Artist Contributers: "
+  a_con = gets.chomp.to_i
+  print "Please enter Artists Benefitted: "
+  a_ben = gets.chomp.to_i
+  print "Please enter exponent: "
+  exp = gets.chomp.to_i
 
+  faba = Faba.new(a_con, a_ben, exp)
+  faba.print_example
+
+  print "\n\n----------------------------------------\n\n"
+end
